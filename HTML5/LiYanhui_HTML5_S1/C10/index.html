@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>表单元素[上]</title>
+</head>
+<body>
+	
+<form action="http://www.haosou.com" method="get" id="register" name="reg" target="_blank" autocomplete="on">
+	<fieldset>
+		<legend>注册表单</legend>
+		<label for="user">用户名称：</label>
+		<!-- <input name="user" autofocus disabled> -->
+		<input id="user" name="user" value="ctang" autocomplete="off"><br>
+
+		<label>电子邮件：</label>
+		<input name="email">
+	</fieldset>
+
+	<button type="submit" formaction="http://www.sogou.com">提交</button>
+	<button type="submit">重置</button>
+	<button type="button">按钮</button>
+</form>
+
+<!-- 电子邮件：<input name="email" form="register"> -->
+
+</body>
+</html>
