@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/*
+* {
+	border: 1px solid red;
+}
+*/
+/*通用选择器还匹配到了html和body元素*/
+
+/*p {
+	color: red;
+}*/
+
+/*#abc {
+	color: blue;
+}
+
+.abc {
+	color: maroon;
+}*/
+
+/*b.abc {
+	color: orange;
+}*/
+
+/*.abc {
+	color: red;
+}
+
+.def {
+	font-size: 30px;
+}*/
+
+/*[href] {
+	color: red;
+}*/
+
+/*[type="password"] {
+	border: 1px solid red;
+}*/
+
+/*[href^="http"] {
+	color: green;
+}*/
+
+/*[href$=".cn"] {
+	color: red;
+}*/
+
+/*[href*="baidu"] {
+	color: red;
+}*/
+
+/*[class~="def"] {
+	color: red;
+}*/
+
+/*p,b,span {
+	color: red;
+}*/
+
+/*p b {
+	color: red;
+}*/
+
+a::before {
+	content: '点击-';
+}
+
+a::after {
+	content: '-请进';
+}
+
+
+

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*:root {
+	border: 1px solid red;
+}*/
+
+/*ul > li {
+	color: red;
+}*/
+
+/*ul > li:first-child {
+	color: red;
+}*/
+/*:first-child {
+	color: red;
+}*/
+/*伪类都需要加上前置选择器来限制范围*/
+
+ul > li:only-child {
+	color: red;
+}
+
+
+
+
+
+
