@@ -99,7 +99,7 @@ a{
 }
 #tour {
 	width: 1263px;
-	height: 1200px;
+	height: 1120px;
 	/*background-color: #ccc;*/
 	margin: 30px auto;
 	text-align: center;
@@ -168,4 +168,47 @@ a{
 	top: 4px;
 	left: 4px;
 	border-bottom-right-radius: 4px;
+}
+#footer {
+	height: 360px;
+	background-color: #222;
+}
+#footer .top {
+	width: 1263px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer .block {
+	width: 410px;
+	height: 280px;
+	/*background-color: red;*/
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+#footer h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ccc;
+	padding: 20px 0 0 20px;
+}
+#footer hr {
+	width: 90%;
+	border: 1px dashed #333;
+}
+#footer ul {
+	color: #666;
+	font-size: 14px;
+	text-indent: 20px;
+	line-height: 2;
+}
+#footer .bottom {
+	height: 80px;
+	line-height: 80px;
+	background-color: #000;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #444;
+	font-size: 14px;
 }
