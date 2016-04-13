@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+div {
+	background: silver;
+	width: 200px;
+	height: 200px;
+	
+	min-width: 500px;
+
+	padding-top: 50px;
+
+	margin-left: 40px;
+ 
+
+	/*width: 50%;*/
+}
