@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+div {
+	width: 200px;
+	height: 200px;
+/*	background-color: green;
+	color: red;
+	opacity: 0.5;*/
+
+	border: 10px solid green;
+
+	/*box-shadow: 5px 5px 5px 2px gray;*/
+
+	/*outline: 5px double red;*/
+
+	cursor: move;
+}

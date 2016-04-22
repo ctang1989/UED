@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+table {
+	width: 400px;
+	height: 300px;
+	text-align: center;
+
+	/*border-collapse: separate;*/
+	/*border-collapse: collapse;*/
+	
+	/*border-spacing: 0px;*/
+	
+	/*caption-side: bottom;*/
+
+	/*empty-cells: hide;*/
+
+	/*table-layout: fixed;*/
+
+	border: 1px solid red;
+}
+
+table tr th, table tr td {
+	border: 1px solid blue;
+}
+
+.sex {
+	vertical-align: top;
+}
+
+ul {
+	width: 120px;
+/*	list-style-type: square;
+	list-style-position: inside;
+	list-style-image: url(bullet.png);*/
+	list-style: square inside url(bullet.png);
+}
+
+b {
+	vertical-align: super;
+}
+
+div {
+	width: 300px;
+	height: 300px;
+	background-color: silver;
+	text-align: center;
+}
+
+div span {
+	background-color: green;
+	vertical-align: -50px;
+	/*vertical-align: -200%;*/
+}
+
+em {
+	vertical-align: 80px;
+}
