@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+p {
+	/*font-size: 50px;*/
+	/*text-shadow: 1px 1px 1px red;*/
+
+	width: 160px;
+	background-color: silver;
+	white-space: nowrap;
+	overflow: hidden;
+	/*text-overflow: clip;*/
+	text-overflow: ellipsis;
+}

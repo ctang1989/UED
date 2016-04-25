@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+div {
+	width: 200px;
+	height: 200px;
+	background: #eee;
+
+	border-radius: 30px;
+
+	/*-webkit-border-radius: 30px;*/	/*这句为了兼容早期实验阶段的border-radius*/
+	/*-moz-border-radius: 30px;*/		/*这句同上，但新版本Firefox已经剔除了前缀的写法*/
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.4em;
+}
+
+code {
+	font-size: 1.1rem;
+}
