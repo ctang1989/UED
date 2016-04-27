@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+div {
+	width: 500px;
+	height: 200px;
+
+	/*background-color: green;*/
+	/*background-image: linear-gradient(orange, green);*/
+	/*background-image: linear-gradient(to top right, orange, green);*/
+
+	/*background-image: linear-gradient(45deg, orange, green);*/
+
+	/*background-image: linear-gradient(45deg, orange 0%, green 20%, blue 40%, red 100%);*/
+	/*background-image: linear-gradient(45deg, orange 10px, green 40px, blue, red 500px);*/
+
+	/*background-color: red;
+	background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));*/
+
+	/*background-image: repeating-linear-gradient(orange 10px, green 30px);*/
+
+	/*background-image: radial-gradient(orange, green);*/
+	/*background-image: radial-gradient(circle, orange, green);*/
+	/*background-image: radial-gradient(circle at top, orange, green);*/
+
+	/*background-image: radial-gradient(circle closest-side, orange, green);*/
+	/*background-image: radial-gradient(circle closest-corner, orange, green);*/
+
+	/*background-image: radial-gradient(circle 50px, orange, green);*/
+
+	background-image: repeating-radial-gradient(circle 50px, orange, green);
+
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Timeout Example</title>
+	<script type="text/javascript">
+	
+		//不推荐传递字符串
+		setTimeout("alert('Hello World!')", 1000);
+
+		//推荐的调用方式
+		setTimeout(function(){
+			alert("Hello World Too!");
+		}, 1000);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

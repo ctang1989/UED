@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Interval Example</title>
+	<script type="text/javascript">
+	
+		//不建议传递字符串
+		setInterval("alert('Hello World!')", 3000);
+
+		//推荐的调用方式
+		setInterval(function(){
+			alert("Hello World Yes");
+		}, 3000);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
