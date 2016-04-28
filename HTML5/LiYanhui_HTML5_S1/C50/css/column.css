@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+#headline {
+	width: 100%;
+	min-width: 1263px;
+	height: 300px;
+	background: linear-gradient(to right bottom, rgba(0,0,0,0.7), rgba(0,0,0,0)), url(../img/headline.jpg) no-repeat center;
+}
+#headline .center {
+	width: 1263px;
+	height: 300px;
+	margin: 0 auto;
+}
+#headline hgroup {
+	padding: 100px 0 0 50px;
+}
+#headline h2 {
+	color: #eee;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+#headline h3 {
+	color: #eee;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+#container {
+	width: 1263px;
+	margin: 30px auto;
+}
+#container .sidebar {
+	width: 340px;
+	float: right;
+}
+#container .sidebox {
+	border: 1px solid #eee;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+#container .sidebox h2 {
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+	background-color: #fafafa;
+	color: #666;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+#container .tag {
+	padding: 10px 0;
+}
+#container .tag li {
+	display: inline-block;
+	margin: 2px 0;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #eee;
+	text-align: left;
+	text-indent: 8px;
+}
+#container .tag a {
+	display: block;
+	color: #999;
+}
+#container .tag a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .figure {
+	padding: 10px 0;
+}
+#container figure {
+	display: inline-block;
+	padding: 4px;
+	color: #666;
+}
+#container .box {
+	padding: 10px 0;
+}
+#container .box a {
+	display: inline-block;
+	margin: 2px 0;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	background-color: #eee;
+	text-align: left;
+	text-indent: 35px;
+}
+#container .box a.trea1 {
+	background: #eee url(../img/trea1.png) no-repeat 10px center;
+}
+#container .box a.trea2 {
+	background: #eee url(../img/trea2.png) no-repeat 10px center;
+}
+#container .box a.trea3 {
+	background: #eee url(../img/trea3.png) no-repeat 10px center;
+}
+#container .box a.trea4 {
+	background: #eee url(../img/trea4.png) no-repeat 10px center;
+}
+#container .list {
+	width: 910px;
+	float: left;
+}
+#container .infor {
+	height: 45px;
+	line-height: 45px;
+	background-color: #eee;
+	margin: 0 0 20px 0;
+}
+#container .information .left {
+	display: inline-block;
+	float: left;
+}
+#container .information .left li {
+	display: inline-block;
+	width: 150px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+}
+#container .information .left li:first-child {
+	background-color: #fff;
+	border-top: 2px solid #458b00;
+	position: relative;
+	left: 1px;
+}
+#container .information .left a {
+	color: #666;
+}
+#container .information .right {
+	display: inline-block;
+	float: right;
+	padding: 0 20px 0 0;
+}
+#container .information .right li {
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+#container .information .right a {
+	padding: 3px 8px;
+	color: #666;
+}
+#container .information .right a.selected, #container .information .right a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .tour {
+	width: 908px;
+	padding: 0;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+	position: relative;
+}
+#container .tour img {
+	float: left;
+}
+#container .tour figcaption {
+	width: 528px;
+	height: 230px;
+	float: right;
+}
+#container .tour hgroup {
+	width: 300px;
+}
+#container .tour h2 {
+	font-size: 22px;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+	color: #333;
+}
+#container .tour h3 {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+	line-height: 1.5;
+	color: #666;
+}
+#container .tour ol {
+	padding: 0 0 0 25px;
+	color: #666;
+	line-height: 2;
+}
+#container .tour mark {
+	border: 1px solid #458b00;
+	border-radius: 4px;
+	color: #458b00;
+	background-color: #fff;
+	padding: 0 5px;
+	font-size: 14px;
+}
+#container .tour .buy {
+	position: absolute;
+	top: 55px;
+	right: 30px;
+}
+#container .tour .price {
+	font-size: 20px;
+	color: #f60;
+}
+#container .tour strong {
+	font-size: 36px;
+}
+#container .tour s {
+	font-size: 16px;
+	color: #999;
+}
+#container .tour .reserve {
+	margin: 10px 0 0 0;
+}
+#container .tour .reserve a {
+	display: block;
+	width: 152px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #f60;
+	font-size: 20px;
+	color: #fff;
+}
+#container .tour .type {
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-bottom-right-radius: 4px;
+	background-color: #59b200;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+#container .tour .disc {
+	width: 52px;
+	height: 52px;
+	background: url(../img/disc.png) no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#container .tour .disc span {
+	display: block;
+	transform: rotate(45deg);
+	width: 52px;
+	height: 52px;
+	padding: 5px 0 0 0;
+	text-indent: 7px;
+	font-size: 14px;
+	color: #ff7a4d;
+}
+#container .tour footer {
+	width: 528px;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 25px;
+	color: #666;
+	letter-spacing: 1px;
+	background-color: #fafafa;
+	position: absolute;
+	bottom: 0;
+}
+#container .tour time {
+	color: #458b00;
+}
+#container .information .more {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 16px;
+	color: #FF8903;
+	cursor: pointer;
+}
+#container .ticket {
+	color: #666;
+	font-size: 16px;
+}
+#container .ticket h2 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 1px 0;
+}
+#container .ticket .type {
+	margin: 15px 0;
+}
+#container .ticket .type mark {
+	color: #fff;
+	background-color: #458b00;
+	padding: 2px 4px;
+	border-radius: 4px;
+	margin: 0 10px 0 10px;
+}
+#container .ticket .left {
+	display: inline-block;
+	width: 40%;
+}
+#container .ticket .right {
+	display: inline-block;
+	width: 40%;
+}
+#container .ticket .button {
+	display: inline-block;
+	width: 10%;
+	margin: 0 0 0 40px;
+}
+#container .ticket .form p {
+	line-height: 2.8;
+}
+#container .ticket .form input {
+	width: 250px;
+	height: 28px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 2px;
+	font-size: 14px;
+	color: #666;
+	margin: 0 0 0 10px;
+	text-indent: 5px;
+}
+#container .ticket .submit {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	border-radius: 4px;
+	background-color: #f60;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	top: -20px;
+}
+#container .ticket .new {
+	margin: 20px 0 0 0;
+}
+#container .ticket .new ul {
+	margin: 15px 0;
+}
+#container .ticket .new li {
+	display: inline-block;
+	padding: 2px 4px;
+}
+#container .ticket .new li:first-child {
+	padding-left: 0;
+}
+#container .ticket .new li:nth-child(2) {
+	background-color: #458b00;
+	color: #fff;
+	border-radius: 4px;
+}
+#container .ticket table {
+	margin: 20px 0 0 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+#container .ticket table th {
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ddd;
+	font-weight: normal;
+}
+#container .ticket table td {
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+#container .ticket table tr:nth-child(2n) {
+	background-color: #fafafa;
+}
+#container .ticket table tr:hover {
+	background-color: #eee;
+}
+#container .ticket .price {
+	color: #f60;
+}
+#container .ticket .reserve {
+	display: inline-block;
+	width: 75px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #f60;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+#container .ticket .more {
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+}
