@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+div {
+	/*-moz-columns: auto 3;*/
+	/*-moz-columns: 150px 3;*/
+
+	/*如果没有设置列数，却设置了每列多少宽度，那么会自动设置列数*/
+	-moz-column-width: 150px;
+	-moz-column-count: 3;
+	-moz-column-gap: 50px;
+	-moz-column-rule: 2px dashed gray;
+
+	-webkit-column-width: 150px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 50px;
+	-webkit-column-rule: 2px dashed gray;
+
+	column-width: 150px;
+	column-count: 3;
+	column-gap: 50px;
+	column-rule: 2px dashed gray;
+}
+
+h1 {
+	text-align: center;
+
+	-moz-column-span: all;
+	-webkit-column-span: all;
+	column-span: all;
+}
