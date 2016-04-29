@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	height: 120px;
+	width: 960px;
+	background-color: olive;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+aside {
+	width: 200px;
+	height: 500px;
+	background-color: purple;
+	position: absolute;
+	top: 120px;
+	left: 0;
+}
+section {
+	width: 760px;
+	height: 500px;
+	background-color: maroon;
+	position: absolute;
+	top: 120px;
+	right: 0;
+}
+footer {
+	width: 960px;
+	height: 120px;
+	background-color: gray;
+	position: absolute;
+	top: 620px;
+	left: 0;
+}

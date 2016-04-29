@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+
+table {
+	margin: 0 auto;
+	/*width: 960px;*/		/*固定布局*/
+	width: 100%;			/*流体布局*/
+	/*border-spacing: 0px;*/
+	border-collapse: collapse;
+}
+.header {
+	height: 120px;
+	background-color: olive;
+}
+.aside {
+	width: 200px;
+	height: 500px;
+	background-color: purple;
+}
+.section {
+	width: 760px;
+	height: 500px;
+	background-color: maroon;
+}
+.footer {
+	height: 120px;
+	background-color: gray;
+}

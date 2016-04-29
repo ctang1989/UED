@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+	margin: 100px;
+	height: 800px;
+	border: 1px solid red;
+	/*在body父元素设置一个不需要top和left定位的相对定位，这个叫做设置参考点*/
+	position: relative;
+}
+
+header {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+/*	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;*/
+/*	position: fixed;
+	top: 100px;
+	left: 0;*/
+/*	position: relative;
+	top: 20px;
+	left: 20px;*/
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+/*aside {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 3;
+}
+*/
