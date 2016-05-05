@@ -22,9 +22,6 @@ img {
 	display: block;
 	max-width: 100%;
 }
-div {
-	box-sizing: border-box;
-}
 .none{
 	display: none;
 }
@@ -55,32 +52,6 @@ div {
 #adver {
 	max-width: 6.4rem;
 	margin: 0 auto;
-}
-#search {
-	max-width: 6.4rem;
-	height: .40rem;
-	margin: 0 auto;
-	background-color: #ddd;
-	position: relative;
-	padding: .05rem 0 0 0;
-}
-#search .search {
-	display: block;
-	width: 95%;
-	outline: none;
-	font-size: .14rem;
-	background-color: #fff;
-	border: none;
-	border-radius: .04rem;
-	height: .3rem;
-	padding: 0 .05rem;
-	margin: 0 auto;
-}
-#search .button {
-	position: absolute;
-	top: .05rem;
-	right: 1%;
-	height: .3rem;
 }
 #footer {
 	max-width: 6.4rem;
