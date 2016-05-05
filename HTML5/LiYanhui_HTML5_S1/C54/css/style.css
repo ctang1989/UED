@@ -22,6 +22,9 @@ img {
 	display: block;
 	max-width: 100%;
 }
+div {
+	box-sizing: border-box;
+}
 .none{
 	display: none;
 }
@@ -52,6 +55,82 @@ img {
 #adver {
 	max-width: 6.4rem;
 	margin: 0 auto;
+}
+#search {
+	max-width: 6.4rem;
+	height: .44rem;
+	background-color: #ddd;
+	margin: 0 auto;
+	padding: .06rem 0 0 0;
+	position: relative;
+}
+#search .search {
+	display: block;
+	outline: none;
+	border: none;
+	width: 95%;
+	height: .32rem;
+	margin: 0 auto;
+	font-size: .14rem;
+	background-color: #fff;
+	border-radius: .04rem;
+	padding: 0 .05rem;
+}
+#search .button {
+	display: block;
+	position: absolute;
+	top: .06rem;
+	right: 1%;
+	background-color: #eee;
+	outline: none;
+	border: none;
+	border-top-right-radius: .04rem;
+	border-bottom-right-radius: .04rem;
+	cursor: pointer;
+	color: #666;
+	font-size: .16rem;
+	width: .5rem;
+	height: .32rem;
+}
+#tour {
+	max-width: 6.4rem;
+	margin: .1rem auto;
+}
+#tour h2 {
+	text-align: center;
+	color: #666;
+	font-size: .18rem;
+}
+#tour h3 {
+	text-align: center;
+	color: #666;
+	font-size: .16rem;
+	font-weight: normal;
+	margin: .05rem 0 0 0;
+}
+/*媒体查询，大于480px小于640px*/
+@media (min-width: 480px) and (max-width: 640px) {
+	#tour h2 {
+		font-size: .18rem;
+	}
+	#tour h3 {
+		font-size: .16rem;
+	}
+	#footer {
+		font-size: .16rem;
+	}
+}
+/*媒体查询，小于480px*/
+@media (max-width: 480px) {
+	#tour h2 {
+		font-size: .16rem;
+	}
+	#tour h3 {
+		font-size: .14rem;
+	}
+	#footer {
+		font-size: .12rem;
+	}
 }
 #footer {
 	max-width: 6.4rem;
