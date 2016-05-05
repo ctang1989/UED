@@ -10,7 +10,7 @@ body,h1,h2,h3,ul,ol,p,figure {
 body {
 	background-color: #fff;
 	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
-	font-size: .16rem;		/*16px*/
+	font-size: 0.16rem;		/*16px*/
 }
 ul, ol {
 	list-style: outside none none;
@@ -21,9 +21,6 @@ a{
 img {
 	display: block;
 	max-width: 100%;
-}
-div {
-	box-sizing: border-box;
 }
 .none{
 	display: none;
@@ -56,32 +53,6 @@ div {
 	max-width: 6.4rem;
 	margin: 0 auto;
 }
-#search {
-	max-width: 6.4rem;
-	height: .40rem;
-	margin: 0 auto;
-	background-color: #ddd;
-	position: relative;
-	padding: .05rem 0 0 0;
-}
-#search .search {
-	display: block;
-	width: 95%;
-	outline: none;
-	font-size: .14rem;
-	background-color: #fff;
-	border: none;
-	border-radius: .04rem;
-	height: .3rem;
-	padding: 0 .05rem;
-	margin: 0 auto;
-}
-#search .button {
-	position: absolute;
-	top: .05rem;
-	right: 1%;
-	height: .3rem;
-}
 #footer {
 	max-width: 6.4rem;
 	background-color: #222;
@@ -89,7 +60,6 @@ div {
 	margin: 0 auto;
 	text-align: center;
 	padding: .1rem 0;
-	font-size: .16rem;
 }
 #footer .top {
 	padding: 0 0 .05rem 0;
