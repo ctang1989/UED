@@ -247,6 +247,99 @@ div, figure, figcaption {
 .information .price strong {
 	font-size: .26rem;
 }
+.ticket .type {
+	margin: .15rem 0;
+}
+.ticket .type mark {
+	color: #fff;
+	background-color: #458b00;
+	padding: .02rem .04rem;
+	border-radius: .04rem;
+	margin: 0 .1rem 0 .1rem;
+}
+.ticket .form p {
+	margin: .1rem 0;
+}
+.ticket .form label {
+	display: block;
+	margin: 0 0 .05rem 0;
+}
+.ticket .form input {
+	width: 97%;
+	height: .28rem;
+	border: .01rem solid #ccc;
+	background-color: #fff;
+	border-radius: .04rem;
+	padding: .02rem;
+	color: #666;
+	text-indent: .05rem;
+}
+.ticket .submit {
+	width: 98%;
+	border-radius: .04rem;
+	background-color: #f60;
+	color: #fff;
+	text-align: center;
+	border: none;
+	margin: .1rem 0;
+	padding: .08rem;
+	font-size: .18rem;
+}
+.ticket .new {
+	margin: .25rem 0 0 0;
+}
+.ticket .new ul {
+	margin: .2rem 0;
+}
+.ticket .new li {
+	display: inline-block;
+	padding: .02rem .04rem;
+}
+.ticket .new li:first-child {
+	padding-left: 0;
+}
+.ticket .new li:nth-child(2) {
+	background-color: #458b00;
+	color: #fff;
+	border-radius: .04rem;
+}
+.ticket table {
+	margin: .2rem 0 0 0;
+	width: 100%;
+	border: .01rem solid #ddd;
+	border-collapse: collapse;
+}
+.ticket table th {
+	border: .01rem solid #ddd;
+	font-weight: normal;
+	padding: .1rem 0;
+	background-color: #eee;
+}
+.ticket table td {
+	border: .01rem solid #ddd;
+	text-align: center;
+	padding: .1rem 0;
+}
+.ticket table tr:nth-child(2n) {
+	background-color: #fafafa;
+}
+.ticket table tr:hover {
+	background-color: #eee;
+}
+.ticket .price {
+	color: #f60;
+}
+.ticket .reserve {
+	background-color: #f60;
+	border-radius: .04rem;
+	color: #fff;
+	text-align: center;
+	padding: .05rem .08rem;
+}
+.ticket .more {
+	text-align: center;
+	color: #666;
+}
 
 /*媒体查询，大于480px小于640px*/
 @media (min-width: 480px) and (max-width: 640px) {
@@ -271,6 +364,9 @@ div, figure, figcaption {
 	.information .price strong {
 		font-size: .26rem;
 	}
+	.ticket .submit {
+		font-size: .18rem;
+	}
 }
 /*媒体查询，小于480px*/
 @media (max-width: 480px) {
@@ -294,6 +390,12 @@ div, figure, figcaption {
 	}
 	.information .price strong {
 		font-size: .2rem;
+	}
+	.ticket .submit {
+		font-size: .16rem;
+	}
+	.min {
+		display: none;
 	}
 }
 
