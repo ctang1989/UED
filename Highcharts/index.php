@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=UTF-8');
 require_once 'includes/MysqliDb.class.php';
 //实例化
 $mysqli = new MysqliDb();
-$result = $mysqli->_query("SELECT exchange_date,count(*) AS total FROM tbl_gift_email_detail GROUP BY exchange_date ORDER BY exchange_date DESC LIMIT 10");
+$result = $mysqli->_query("SELECT exchange_date,count(*) AS total FROM tbl_gift_post_detail GROUP BY exchange_date ORDER BY exchange_date DESC LIMIT 10");
 while($row = $mysqli->_fetch_array_list($result)){
 	$date_list[] = $row['exchange_date'];
 	$exchange_number[] = intval($row['total']);
