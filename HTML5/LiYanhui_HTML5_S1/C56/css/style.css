@@ -40,6 +40,9 @@ div, figure, figcaption {
 	height: .45rem;			/*45px*/
 	background-color: #333;
 	font-size: 0.16rem;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
 }
 #header .link {
 	height: .45rem;			/*45px*/
@@ -62,6 +65,7 @@ div, figure, figcaption {
 #adver {
 	max-width: 6.4rem;
 	margin: 0 auto;
+	padding: .45rem 0 0 0;
 }
 #search {
 	max-width: 6.4rem;
@@ -160,29 +164,86 @@ div, figure, figcaption {
 	position: relative;
 	right: .05rem;
 }
+#headline {
+	max-width: 6.4rem;
+	margin: 0 auto;
+	padding: .45rem 0 0 0;
+	position: relative;
+}
+#headline hgroup {
+	color: #eee;
+	position: absolute;
+	top: 48%;
+	left: 10%;
+}
+#headline h2 {
+	font-size: .22rem;
+}
+#headline h3 {
+	font-size: .14rem;
+}
+.list {
+	max-width: 6.4rem;
+	margin: .15rem auto;
+	padding: 0 .1rem;
+	font-size: .16rem;
+	color: #666;
+}
+.list h2 {
+	font-size: .20rem;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 .15rem 0;
+}
+.about p {
+	line-height: 2;
+	margin: .2rem 0;
+}
+.about address {
+	font-style: normal;
+	line-height: 1.6;
+	margin: .2rem 0;
+}
 
 /*媒体查询，大于480px小于640px*/
 @media (min-width: 480px) and (max-width: 640px) {
 	#tour h2 {
-		font-size: .20rem;
+		font-size: .2rem;
 	}
-	#tour h3, #tour figcaption, #tour .info {
+	#tour h3, #tour figcaption, #tour .info, .list {
 		font-size: .16rem;
 	}
 	#footer {
 		font-size: .16rem;
+	}
+	#headline h2 {
+		font-size: .22rem;
+	}
+	#headline h3 {
+		font-size: .14rem;
+	}
+	.list h2 {
+		font-size: .2rem;
 	}
 }
 /*媒体查询，小于480px*/
 @media (max-width: 480px) {
 	#tour h2 {
-		font-size: .16rem;
+		font-size: .18rem;
 	}
-	#tour h3, #tour figcaption, #tour .info {
-		font-size: .12rem;
+	#tour h3, #tour figcaption, #tour .info, .list {
+		font-size: .14rem;
 	}
 	#footer {
+		font-size: .14rem;
+	}
+	#headline h2 {
+		font-size: .18rem;
+	}
+	#headline h3 {
 		font-size: .12rem;
+	}
+	.list h2 {
+		font-size: .17rem;
 	}
 }
 
