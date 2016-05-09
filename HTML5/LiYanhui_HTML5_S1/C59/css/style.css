@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,ul,ol,p,figure {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+}
+ul, ol {
+	list-style: outside none none;
+}
+a{
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+div, figure, figcaption, button, input {
+	box-sizing: border-box;
+}
+.none{
+	display: none;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.sm-visible {
+	display: none;
+}
+#header {
+	width: 100%;
+	height: 70px;
+	background: #333;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+#header .center {
+	max-width: 1263px;
+	height: 70px;
+	margin: 0 auto;
+}
+#header .logo {
+	width: 30%;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat left center;
+	text-indent: -9999px;
+	float: left;
+}
+#header .link {
+	width: 55%;
+	height: 70px;
+	line-height: 70px;
+	color: #eee;
+	float: right;
+}
+#header .link li {
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+#header .link a {
+	color: #eee;
+	display: block;
+}
+#header .link a:hover,
+#header .active a {
+	background-color: #000;
+}
+#adver {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 70px 0 0 0;
+	position: relative;
+}
+#adver .center {
+	width: 44%;
+	height: 50px;
+	background-color: #000;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin: 0 0 0 -22%;
+	opacity: 0.6;
+	border-radius: 10px;
+}
+#adver .copy {
+	opacity: 1;
+	background-color: transparent;
+	padding: 7px 10px 0 10px;
+}
+#adver .search {
+	width: 78%;
+	height: 36px;
+	border-radius: 4px;
+	border: 0 none;
+	font-size: 14px;
+	color: #666;
+	outline: none;
+	padding: 5px 10px;
+	display: block;
+	float: left;
+}
+#adver .button {
+	width: 20%;
+	height: 36px;
+	cursor: pointer;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	background: #ff9d00;
+	background-position: -2px 0;
+	display: block;
+	float: right;
+}
+#footer {
+	background-color: #222;
+	clear: both;
+	position: relative;
+	top: 20px;
+}
+#footer .top {
+	max-width: 1263px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer .version {
+	color: #777;
+	text-align: center;
+	padding: 10px 0;
+}
+#footer .block {
+	width: 33.33%;
+	height: 280px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	float: left;
+}
+#footer h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ccc;
+	padding: 20px 0 0 20px;
+}
+#footer hr {
+	width: 90%;
+	border: 1px dashed #333;
+}
+#footer ul {
+	color: #666;
+	font-size: 14px;
+	text-indent: 20px;
+	line-height: 2;
+}
+#footer .bottom {
+	padding: 20px 0;
+	background-color: #000;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #444;
+	font-size: 14px;
+}
+
+/*媒体查询，参考部分Bootstrap框架*/
+/*当页面大于1200px时，大屏幕，主要是PC端*/
+@media (min-width: 1200px) {
+
+}
+/*在992px和1199px之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#adver .center {
+		width: 50%;
+		margin: 0 0 0 -25%;
+	}
+}
+/*在768px和991px之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#adver .center {
+		width: 60%;
+		height: 46px;
+		margin: 0 0 0 -30%;
+	}
+	#adver .search, #adver .button {
+		height: 36px;
+	}
+	#adver .copy {
+		padding: 5px 8px 0 8px;
+	}
+}
+/*在480px和767px之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .sm-hidden {
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#adver {
+		padding: 45px 0 0 0;
+	}
+	#adver .center {
+		width: 70%;
+		height: 44px;
+		margin: 0 0 0 -35%;
+	}
+	#adver .search, #adver .button {
+		height: 34px;
+	}
+	#adver .copy {
+		padding: 5px 8px 0 8px;
+	}
+	.sm-visible {
+		display: block;
+	}
+}
+/*在小于480px的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .xs-hidden, .sm-hidden {
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#header .link li {
+		width: 25%;
+	}
+	#adver {
+		padding: 45px 0 0 0;
+	}
+	#adver .center {
+		width: 80%;
+		height: 40px;
+		margin: 0 0 0 -40%;
+	}
+	#adver .search, #adver .button {
+		height: 30px;
+	}
+	#adver .copy {
+		padding: 5px 8px 0 8px;
+	}
+	#adver .search {
+		width: 70%;
+	}
+	#adver .button {
+		width: 28%;
+	}
+	.sm-visible {
+		display: block;
+	}
+	#footer .bottom, #footer .version {
+		font-size: 13px;
+	}
+}
