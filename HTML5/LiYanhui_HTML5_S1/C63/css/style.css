@@ -490,6 +490,147 @@ div, figure, figcaption, button, input {
 	font-size: 16px;
 	color: #666;
 }
+.information h2 {
+	color: #666;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 1px 0;
+	margin: 0 0 20px 0;
+}
+#container .tour {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+	position: relative;
+	background-color: #fff;
+}
+#container .tour img {
+	width: 42%;
+	float: left;
+}
+#container .tour figcaption {
+	width: 58%;
+	float: right;
+}
+#container .tour hgroup {
+	width: 290px;
+}
+#container .tour h2 {
+	font-size: 22px;
+	font-weight: normal;
+	padding: 10px 0 0 15px;
+	color: #333;
+	border: none;
+	margin: 0 0 5px 0;
+}
+#container .tour h3 {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0 0 5px 15px;
+	line-height: 1.5;
+	color: #666;
+}
+#container .tour ol {
+	padding: 0 0 0 15px;
+	color: #666;
+	line-height: 2;
+}
+#container .tour mark {
+	border: 1px solid #458b00;
+	border-radius: 4px;
+	color: #458b00;
+	background-color: #fff;
+	padding: 0 5px;
+	font-size: 14px;
+}
+#container .tour .buy {
+	position: absolute;
+	top: 55px;
+	right: 15px;
+}
+#container .tour .price {
+	font-size: 20px;
+	color: #f60;
+}
+#container .tour strong {
+	font-size: 36px;
+}
+#container .tour s {
+	font-size: 16px;
+	color: #999;
+}
+#container .tour .reserve {
+	margin: 10px 0 0 0;
+}
+#container .tour .reserve a {
+	display: block;
+	width: 152px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #f60;
+	font-size: 20px;
+	color: #fff;
+}
+#container .tour .type {
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-bottom-right-radius: 4px;
+	background-color: #59b200;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+#container .tour .disc {
+	width: 52px;
+	height: 52px;
+	background: url(../img/disc.png) no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#container .tour .disc span {
+	display: block;
+	transform: rotate(45deg);
+	width: 52px;
+	height: 52px;
+	padding: 5px 0 0 0;
+	text-indent: 7px;
+	font-size: 14px;
+	color: #ff7a4d;
+}
+#container .tour footer {
+	width: 58%;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 15px;
+	color: #666;
+	letter-spacing: 1px;
+	background-color: #fafafa;
+	position: absolute;
+	bottom: 0;
+}
+#container .tour time {
+	color: #458b00;
+}
+#container .information .more {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 16px;
+	color: #FF8903;
+	cursor: pointer;
+}
 #footer {
 	background-color: #222;
 	clear: both;
@@ -584,6 +725,12 @@ div, figure, figcaption, button, input {
 	#container .ticket .button {
 		width: 10%;
 	}
+	#container .tour h2 {
+		margin: 0 0 20px 0;
+	}
+	#container .tour h3 {
+		margin: 10px 0;
+	}
 }
 /*在768px和991px之间的屏幕里，小屏幕，主要是PAD*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -650,13 +797,26 @@ div, figure, figcaption, button, input {
 	#container .ticket .new {
 		margin: 40px 0 0 0;
 	}
+	.md-hidden {
+		display: none;
+	}
+	#container .tour .buy {
+		position: absolute;
+		top: auto;
+		right: auto;
+		bottom: 0;
+		padding: 0 0 0 15px;
+	}
+	#container .tour h2 {
+		font-size: 20px;
+	}
 }
 /*在480px和767px之间的屏幕里，超小屏幕，主要是手机*/
 @media (min-width: 480px) and (max-width: 767px) {
 	#header, #header .center, #header .link {
 		height: 45px;
 	}
-	#header .logo, .sm-hidden {
+	#header .logo, .sm-hidden, .md-hidden {
 		display: none;
 	}
 	#header .link {
@@ -757,13 +917,35 @@ div, figure, figcaption, button, input {
 	.ticket .type, .ticket .form, .ticket .new, .ticket .form input, .ticket .reserve, #container .ticket .more {
 		font-size: 14px;
 	}
+	#container .tour .buy {
+		position: absolute;
+		top: auto;
+		right: auto;
+		bottom: 0;
+		padding: 0 0 0 15px;
+	}
+	#container .tour h2 {
+		font-size: 18px;
+		padding: 0 0 0 15px;
+		margin: 0;
+	}
+	#container .tour h3 {
+		font-size: 14px;
+		padding: 0 0 5px 15px;
+	}
+	#container .tour hgroup {
+		width: 98%;
+	}
+	#container .tour strong {
+		font-size: 16px;
+	}
 }
 /*在小于480px的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 479px) {
 	#header, #header .center, #header .link {
 		height: 45px;
 	}
-	#header .logo, .xs-hidden, .sm-hidden {
+	#header .logo, .xs-hidden, .sm-hidden, .md-hidden {
 		display: none;
 	}
 	#header .link {
@@ -874,6 +1056,42 @@ div, figure, figcaption, button, input {
 		margin: 40px 0 0 0;
 	}
 	.ticket .type, .ticket .form, .ticket .new, .ticket .form input, .ticket .reserve, #container .ticket .more {
+		font-size: 14px;
+	}
+	#container .tour .buy {
+		position: absolute;
+		top: auto;
+		right: auto;
+		bottom: 0;
+		padding: 0 0 0 10px;
+	}
+	#container .tour h2 {
+		font-size: 16px;
+		padding: 0 0 0 10px;
+		margin: 0;
+		height: 25px;
+		line-height: 25px;
+		overflow: hidden;
+	}
+	#container .tour h3 {
+		font-size: 14px;
+		padding: 0 0 5px 10px;
+		height: 23px;
+		line-height: 1;
+		overflow: hidden;
+	}
+	#container .tour hgroup {
+		width: 98%;
+	}
+	#container .tour .buy .price, #container .tour strong {
+		font-size: 15px;
+	}
+	#container .tour .buy s {
+		font-size: 14px;
+	}
+	#container .information .more {
+		height: 10px;
+		line-height: 10px;
 		font-size: 14px;
 	}
 }
