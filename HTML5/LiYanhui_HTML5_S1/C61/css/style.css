@@ -1,0 +1,598 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,ul,ol,p,figure {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+}
+ul, ol {
+	list-style: outside none none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+div, figure, figcaption, button, input {
+	box-sizing: border-box;
+}
+.none {
+	display: none;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.sm-visible {
+	display: none;
+}
+#header {
+	width: 100%;
+	height: 70px;
+	background: #333;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+#header .center {
+	max-width: 1263px;
+	height: 70px;
+	margin: 0 auto;
+}
+#header .logo {
+	width: 30%;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat left center;
+	text-indent: -9999px;
+	float: left;
+}
+#header .link {
+	width: 55%;
+	height: 70px;
+	line-height: 70px;
+	color: #eee;
+	float: right;
+}
+#header .link li {
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+#header .link a {
+	color: #eee;
+	display: block;
+}
+#header .link a:hover,
+#header .active a {
+	background-color: #000;
+}
+#adver {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 70px 0 0 0;
+	position: relative;
+}
+#adver .center {
+	width: 44%;
+	height: 50px;
+	background-color: #000;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin: 0 0 0 -22%;
+	opacity: 0.6;
+	border-radius: 10px;
+}
+#adver .copy {
+	opacity: 1;
+	background-color: transparent;
+	padding: 7px 10px 0 10px;
+}
+#adver .search {
+	width: 78%;
+	height: 36px;
+	border-radius: 4px;
+	border: 0 none;
+	font-size: 14px;
+	color: #666;
+	outline: none;
+	padding: 5px 10px;
+	display: block;
+	float: left;
+}
+#adver .button {
+	width: 20%;
+	height: 36px;
+	cursor: pointer;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	background: #ff9d00;
+	background-position: -2px 0;
+	display: block;
+	float: right;
+}
+#tour {
+	max-width: 1263px;
+	margin: 25px auto;
+	text-align: center;
+}
+#tour .center h2 {
+	font-size: 26px;
+	letter-spacing: 2px;
+	color: #333;
+	margin: 8px 0;
+}
+#tour .center p {
+	color: #666;
+	margin: 8px 10px;
+	font-size: 16px;
+}
+#tour figure {
+	border: 1px solid #ddd;
+	display: block;
+	padding: 4px;
+	border-radius: 4px;
+	margin: 15px 0.4%;
+	width: 32.4%;
+	text-align: left;
+	position: relative;
+	float: left;
+}
+#tour figure img {
+	vertical-align: middle;
+}
+#tour .tour_title {
+	height: 40px;
+	overflow: hidden;
+}
+#tour figcaption {
+	color: #777;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	padding: 7px 0 1px 0;
+}
+#tour .info {
+	padding: 5px 0 0 0;
+}
+#tour .title {
+	color: #333;
+	font-weight: normal;
+}
+#tour .sat {
+	float: right;
+	font-size: 13px;
+	color: #999;
+	font-style: normal;
+	position: relative;
+	top: 5px;
+	right: 5px;
+}
+#tour .price {
+	color: #f60;
+	font-size: 14px;
+}
+#tour .price strong {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+#tour .type {
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #59b200;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-bottom-right-radius: 4px;
+}
+#headline {
+	max-width: 1920px;
+	padding: 70px 0 0 0;
+	margin: 0 auto;
+	position: relative;
+}
+#headline hgroup {
+	position: absolute;
+	top: 45%;
+	left: 18%;
+}
+#headline h2 {
+	color: #eee;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+#headline h3 {
+	color: #eee;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+#container {
+	max-width: 1263px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+#container .sidebar {
+	width: 28%;
+	float: right;
+}
+#container .sidebox {
+	border: 1px solid #eee;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+#container .sidebox h2 {
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+	background-color: #fafafa;
+	color: #666;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+#container .tag {
+	padding: 10px 0;
+}
+#container .tag li {
+	display: inline-block;
+	margin: 2px 0;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #eee;
+	text-align: left;
+	text-indent: 8px;
+}
+#container .tag a {
+	display: block;
+	color: #999;
+}
+#container .tag a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .figure {
+	padding: 10px 0;
+}
+#container figure {
+	display: inline-block;
+	padding: 4px;
+	color: #666;
+}
+#container .box {
+	padding: 10px 0;
+}
+#container .box a {
+	display: inline-block;
+	margin: 2px 0;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	background-color: #eee;
+	text-align: left;
+	text-indent: 35px;
+}
+#container .box a.trea1 {
+	background: #eee url(../img/trea1.png) no-repeat 10px center;
+}
+#container .box a.trea2 {
+	background: #eee url(../img/trea2.png) no-repeat 10px center;
+}
+#container .box a.trea3 {
+	background: #eee url(../img/trea3.png) no-repeat 10px center;
+}
+#container .box a.trea4 {
+	background: #eee url(../img/trea4.png) no-repeat 10px center;
+}
+#container .list {
+	width: 71%;
+	float: left;
+}
+#container .about {
+	color: #666;
+	font-size: 16px;
+}
+#container .about h2 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: normal;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 1px 0;
+}
+#container .about p {
+	line-height: 2;
+	margin: 20px 0;
+}
+#container .about address {
+	line-height: 1.6;
+	font-style: normal;
+	margin: 20px 0;
+}
+#footer {
+	background-color: #222;
+	clear: both;
+	position: relative;
+	top: 20px;
+}
+#footer .top {
+	max-width: 1263px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer .version {
+	color: #777;
+	text-align: center;
+	padding: 10px 0;
+}
+#footer .block {
+	width: 33.33%;
+	height: 280px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	float: left;
+}
+#footer h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ccc;
+	padding: 20px 0 0 20px;
+}
+#footer hr {
+	width: 90%;
+	border: 1px dashed #333;
+}
+#footer ul {
+	color: #666;
+	font-size: 14px;
+	text-indent: 20px;
+	line-height: 2;
+}
+#footer .bottom {
+	padding: 20px 0;
+	background-color: #000;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #444;
+	font-size: 14px;
+}
+
+/*媒体查询，参考部分Bootstrap框架*/
+/*当页面大于1200px时，大屏幕，主要是PC端*/
+@media (min-width: 1200px) {
+	#adver .search {
+		width: 88%;
+	}
+	#adver .button {
+		width: 10%;
+	}
+}
+/*在992px和1199px之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#adver .center {
+		width: 50%;
+		margin: 0 0 0 -25%;
+	}
+	#adver .search {
+		width: 88%;
+	}
+	#adver .button {
+		width: 10%;
+	}
+	#tour .center h2 {
+		font-size: 24px;
+	}
+	#headline hgroup {
+		left: 12%;
+	}
+	.sidebar {
+		display: none;
+	}
+	#container .list {
+		width: 100%;
+	}
+}
+/*在768px和991px之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#adver .center {
+		width: 60%;
+		height: 46px;
+		margin: 0 0 0 -30%;
+	}
+	#adver .search, #adver .button {
+		height: 36px;
+	}
+	#adver .copy {
+		padding: 5px 8px 0 8px;
+	}
+	#adver .search {
+		width: 86%;
+	}
+	#adver .button {
+		width: 12%;
+	}
+	#tour .center h2 {
+		font-size: 22px;
+	}
+	#headline hgroup {
+		left: 10%;
+	}
+	#headline h2 {
+		font-size: 22px;
+	}
+	#headline h3 {
+		font-size: 16px;
+	}
+	.sidebar {
+		display: none;
+	}
+	#container .list {
+		width: 100%;
+	}
+}
+/*在480px和767px之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .sm-hidden {
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#adver {
+		padding: 45px 0 0 0;
+	}
+	#adver .center {
+		width: 70%;
+		height: 44px;
+		margin: 0 0 0 -35%;
+	}
+	#adver .search, #adver .button {
+		height: 34px;
+	}
+	#adver .copy {
+		padding: 5px 8px 0 8px;
+	}
+	.sm-visible {
+		display: block;
+	}
+	#adver .search {
+		width: 84%;
+	}
+	#adver .button {
+		width: 14%;
+	}
+	#tour .center h2 {
+		font-size: 20px;
+	}
+	#tour .center p {
+		font-size: 14px;
+	}
+	#tour figure {
+		width: 49.2%;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+	}
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 20px;
+	}
+	#headline h3 {
+		font-size: 14px;
+	}
+	.sidebar {
+		display: none;
+	}
+	#container .list {
+		width: 100%;
+	}
+	#container .about p {
+		font-size: 15px;
+	}
+	#container .about address {
+		font-size: 15px;
+	}
+}
+/*在小于480px的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .xs-hidden, .sm-hidden {
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#header .link li {
+		width: 25%;
+	}
+	#adver {
+		padding: 45px 0 0 0;
+	}
+	#adver .center {
+		width: 80%;
+		height: 40px;
+		margin: 0 0 0 -40%;
+	}
+	#adver .search, #adver .button {
+		height: 30px;
+	}
+	#adver .copy {
+		padding: 5px 8px 0 8px;
+	}
+	#adver .search {
+		width: 70%;
+	}
+	#adver .button {
+		width: 28%;
+	}
+	.sm-visible {
+		display: block;
+	}
+	#footer .bottom, #footer .version {
+		font-size: 13px;
+	}
+	#tour .center h2 {
+		font-size: 18px;
+	}
+	#tour .center p {
+		font-size: 13px;
+	}
+	#tour figure {
+		width: 99%;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+	}
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 17px;
+	}
+	#headline h3 {
+		font-size: 12px;
+	}
+	.sidebar {
+		display: none;
+	}
+	#container .list {
+		width: 100%;
+	}
+	#container .about p {
+		font-size: 14px;
+	}
+	#container .about address {
+		font-size: 14px;
+	}
+}
