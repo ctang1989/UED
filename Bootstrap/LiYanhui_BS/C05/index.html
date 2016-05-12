@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>栅格系统</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.a {
+			height: 50px;
+			border: 1px solid #ccc;
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body>
+
+<h5>100%宽度</h5>
+<div class="container-fluid a">
+	container-fluid
+</div>
+
+<h5>固定宽度</h5>
+<div class="container a">
+	container
+</div>
+
+<h5>创建最多12列的响应式行</h5>
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+		<div class="col-md-1 a">1</div>
+	</div>
+</div>
+
+<h5>总列数都是12，每列分配多列</h5>
+<div class="container">
+	<div class=row>
+		<div class="col-md-4 a">1-4</div>
+		<div class="col-md-4 a">5-8</div>
+		<div class="col-md-4 a">9-12</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 a">1-8</div>
+		<div class="col-md-4 a">9-12</div>
+	</div>
+</div>
+
+<h5>四种屏幕分类全部激活</h5>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+	</div>
+</div>
+
+<h5>设置列偏移，让中间保持空隙</h5>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 a">8</div>
+		<div class="col-md-3 col-md-offset-1 a">3</div>
+	</div>
+</div>
+
+<h5>嵌套，嵌满也是12列</h5>
+<div class="container">
+	<div class="row">
+		<div class="col-md-9 a">
+			<div class="col-md-8 a">1-8</div>
+			<div class="col-md-4 a">9-12</div>
+		</div>
+		<div class="col-md-3 a">10-12</div>
+	</div>
+</div>
+
+<h5>可以把两个列交换位置，push向左移动，pull向右移动</h5>
+<div class="container">
+	<div class="row">
+		<div class="col-md-9 col-md-push-3 a">9</div>
+		<div class="col-md-3 col-md-pull-9 a">3</div>
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
