@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>进度条媒体对象和Well组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin: 50px;">
+
+<h4>Well组件</h4>
+<h5>- 嵌入效果</h5>
+<div class="well">
+	Bootstrap
+</div>
+
+<h5>- 有lg和sm两种可选值</h5>
+<div class="well well-lg">
+	well-lg
+</div>
+<div class="well well-sm">
+	well-sm
+</div>
+
+<h4>进度条组件</h4>
+<h5>- 基本进度条</h5>
+<div class="progess">
+	<div class="progress-bar" style="width:60%;">60%</div>
+</div>
+
+<br>
+
+<h5>- 最低值进度条</h5>
+<div class="progress">
+	<div class="progress-bar" style="min-width:20px;">0%</div>
+</div>
+
+<h5>- 结合情景的进度条</h5>
+<div class="progress">
+	<div class="progress-bar progress-bar-success" style="min-width:20px;width:60%;">60%</div>
+</div>
+
+<h5>- 条纹状，IE10+支持</h5>
+<div class="progress">
+	<div class="progress-bar progress-bar-success progress-bar-striped" style="min-width:20px;width:60%;">60%</div>
+</div>
+
+<h5>- 动画效果</h5>
+<div class="progress">
+	<div class="progress-bar progress-bar-success progress-bar-striped active" style="min-width:20px;width:60%;">60%</div>
+</div>
+
+<h5>- 堆叠效果</h5>
+<div class="progress">
+	<div class="progress-bar progress-bar-success" style="min-width:20px;width:35%;">35%</div>
+	<div class="progress-bar progress-bar-warning" style="min-width:20px;width:20%;">20%</div>
+	<div class="progress-bar progress-bar-danger" style="min-width:20px;width:10%;">10%</div>
+</div>
+
+<h4>媒体对象组件</h4>
+<h5>- 基本实例</h5>
+<div class="media">
+	<div class="media-left">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Media heading</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+	</div>
+</div>
+
+<h5>- 媒体对象在右边</h5>
+<div class="media">
+	<div class="media-body">
+		<h4 class="media-heading">Media heading</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+	</div>
+	<div class="media-right">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+</div>
+
+<h5>- 媒体对象在两边</h5>
+<div class="media">
+	<div class="media-left">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Media heading</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+	</div>
+	<div class="media-right">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+</div>
+
+<h5>- 对齐方式，图片或其他媒体类型可以顶部，中部或底部对齐。默认是顶部对齐。</h5>
+<div class="media">
+	<div class="media-left media-top">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Top aligned media</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+	</div>
+</div>
+<div class="media">
+	<div class="media-left media-middle">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Middle aligned media</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+	</div>
+</div>
+<div class="media">
+	<div class="media-left media-bottom">
+		<a href="#">
+			<img src="img/small.png" alt="" class="media-object">
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Bottom alighed media</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+	</div>
+</div>
+
+<h5>- 媒体对象列表</h5>
+<ul class="media-list">
+	<li class="media">
+		<div class="media-left">
+			<a href="#">
+				<img src="img/small.png" alt="" class="media-object">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">Media heading</h4>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+			<div class="media">
+				<div class="media-left media-top">
+					<a href="#">
+						<img src="img/small.png" alt="" class="media-object">
+					</a>
+				</div>
+				<div class="media-body">
+					<h4 class="media-heading">Mested media heading</h4>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+					<div class="media">
+						<div class="media-left media-top">
+							<a href="#">
+								<img src="img/small.png" alt="" class="media-object">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Mested media heading</h4>
+							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="media">
+				<div class="media-left media-top">
+					<a href="#">
+						<img src="img/small.png" alt="" class="media-object">
+					</a>
+				</div>
+				<div class="media-body">
+					<h4 class="media-heading">Mested media heading</h4>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+				</div>
+			</div>
+		</div>
+	</li>
+	<li class="media">
+		<div class="media-left">
+			<a href="#">
+				<img src="img/small.png" alt="" class="media-object">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">Top aligned media</h4>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+		</div>
+	</li>
+</ul>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
