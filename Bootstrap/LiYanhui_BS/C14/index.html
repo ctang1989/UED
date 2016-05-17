@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>下拉菜单和滚动监听插件 - 下拉菜单</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin: 50px;">
+
+<div class="dropdown" id="dropdown">
+	<button class="btn btn-primary" data-toggle="dropdown">
+		下拉菜单
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">资讯</a></li>
+		<li><a href="#">产品</a></li>
+		<li><a href="#">关于</a></li>
+	</ul>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('#dropdown').on('show.bs.dropdown', function(){
+		alert('在调用show方法时立即触发！');
+	});
+	$('#dropdown').on('shown.bs.dropdown', function(){
+		alert('在下拉菜单完全显示出来，并且等CSS动画完成之后触发。');
+	});
+	$('#dropdown').on('hide.bs.dropdown', function(){
+		alert('在hide方法调用时，但还未关闭隐藏时触发。');
+	});
+	$('#dropdown').on('hidden.bs.dropdown', function(){
+		alert('在下拉菜单完全隐藏之后，并且等CSS动画完成之后触发。');
+	});
+</script>
+</body>
+</html>
