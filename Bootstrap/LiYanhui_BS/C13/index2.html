@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>模态框插件</title>
+	<title>模态框插件 - 通过jQuery方式声明</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body style="margin: 50px;">
@@ -48,9 +48,38 @@
 	</div>
 </div>
 
-<button class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="true" data-keyboard="true">点击弹窗</button>
+<button class="btn btn-primary" id="btn">点击弹窗</button>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	//点击显示弹窗
+	$('#btn').on('click', function(){
+		$('#myModal').modal('show');
+	});
+
+	//参数通过jQuery方式声明
+	$('#myModal').modal({
+		show : false,
+		remote : 'content.html',
+	});
+
+	//事件
+	$('#myModal').on('show.bs.modal', function(){
+		alert('在show方法调用时立即触发！');
+	});
+	$('#myModal').on('shown.bs.modal', function(){
+		alert('在模态框显示完毕后触发！');
+	});
+	$('#myModal').on('hide.bs.modal', function(){
+		alert('在hide方法调用时立即触发！');
+	});
+	$('#myModal').on('hidden.bs.modal', function(){
+		alert('在模态框隐藏完毕后触发！');
+	});
+	$('#myModal').on('loaded.bs.modal', function(){
+		alert('远程数据加载完毕后触发！');
+	});
+</script>
 </body>
 </html>
