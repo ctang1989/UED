@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>工具提示插件 - JavaScript方式</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		a:focus {
+			outline: none;
+		}
+	</style>
+</head>
+<body style="margin:100px;">
+
+<a href="#" data-toggle="tooltip" title="ToolTip - JavaScript">HTML5</a>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('a').tooltip({
+		delay : {
+			show : 500,
+			hide : 100,
+		},
+		placement : 'bottom'
+	});
+</script>
+</body>
+</html>
