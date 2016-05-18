@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>弹出框插件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+
+	</style>
+</head>
+<body style="margin:200px;">
+
+<button id="show_btn" type="button" class="btn btn-danger" 
+	data-toggle="popover" 
+	title="BootStrap" 
+	data-content="Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0 。" 
+	data-placement="top"
+>点击弹出/隐藏弹出框</button>
+
+<button id="function_btn" class="btn btn-default">方法按钮</button>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+	$('#show_btn').popover();
+
+	// 通过JavaScript执行方法
+	$('#function_btn').on('click', function(){
+		// $('#show_btn').popover('show');		// 显示
+		// $('#show_btn').popover('hide');		// 隐藏
+		$('#show_btn').popover('toggle');		// 反转显示和隐藏
+		// $('#show_btn').popover('destroy');	// 隐藏并销毁
+	});
+
+	// 事件
+	$('#show_btn').on('show.bs.popover', function(){
+		alert('调用show方法时触发！');
+	});
+	$('#show_btn').on('shown.bs.popover', function(){
+		alert('在显示整个弹窗时触发！');
+	});
+	$('#show_btn').on('hide.bs.popover', function(){
+		alert('调用hide方法时触发！');
+	});
+	$('#show_btn').on('hidden.bs.popover', function(){
+		alert('在完全关闭整个弹窗时触发！');
+	});
+
+</script>
+</body>
+</html>
