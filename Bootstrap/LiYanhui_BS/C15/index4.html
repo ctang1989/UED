@@ -15,15 +15,40 @@
 
 <a href="#" data-toggle="tooltip" title="ToolTip - JavaScript">HTML5</a>
 
+<button class="btn btn-default">按钮</button>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	$('a').tooltip({
 		delay : {
-			show : 500,
+			show : 100,
 			hide : 100,
 		},
-		placement : 'bottom'
+		placement : 'auto top',
+		trigger : 'click',
+	});
+
+	// 四个方法
+	$('button').on('click', function(){
+		// $('a').tooltip('show');		// 显示
+		// $('a').tooltip('hide');		// 隐藏
+		$('a').tooltip('toggle');		// 反转显示和隐藏
+		//$('a').tooltip('destroy');	// 隐藏并销毁
+	});
+
+	// 事件
+	$('a').on('show.bs.tooltip', function(){
+		alert('调用show时触发！');
+	});
+	$('a').on('shown.bs.tooltip', function(){
+		alert('在提示框完全显示给用户之后触发！');
+	});
+	$('a').on('hide.bs.tooltip', function(){
+		alert('在hide方法调用时立即触发！');
+	});
+	$('a').on('hidden.bs.tooltip', function(){
+		alert('在提示框完全隐藏之后触发！');
 	});
 </script>
 </body>
