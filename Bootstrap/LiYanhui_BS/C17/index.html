@@ -14,37 +14,53 @@
 <h5>- 单个切换</h5>
 <button class="btn btn-primary" data-toggle="button" autocomplete="off">单个切换</button>
 
+<h5>- 使用button方法中的toggle参数来替代data-toggle="button"</h5>
+<button id="toggle_btn" class="btn btn-primary" autocomplete="off">单个切换 - Toggle</button>
+
 <h5>- 单选按钮</h5>
 <div class="btn-group" data-toggle="buttons">
 	<label for="" class="btn btn-primary active">
-		<input type="radio" name="sex" value="男" checked> 男
+		<input type="radio" name="sex" autocomplete="off" value="男" checked> 男
 	</label>
 	<label for="" class="btn btn-primary">
-		<input type="radio" name="sex" value="女"> 女
+		<input type="radio" name="sex" autocomplete="off" value="女"> 女
 	</label>
 </div>
 
 <h5>- 复选按钮</h5>
 <div class="btn-group" data-toggle="buttons">
 	<label for="" class="btn btn-primary active">
-		<input type="checkbox" name="fa" value="音乐" checked> 音乐
+		<input type="checkbox" name="fa" autocomplete="off" value="音乐" checked> 音乐
 	</label>
 	<label for="" class="btn btn-primary">
-		<input type="checkbox" name="fa" value="体育"> 体育
+		<input type="checkbox" name="fa" autocomplete="off" value="体育"> 体育
 	</label>
 	<label for="" class="btn btn-primary">
-		<input type="checkbox" name="fa" value="美术"> 美术
+		<input type="checkbox" name="fa" autocomplete="off" value="美术"> 美术
 	</label>
 	<label for="" class="btn btn-primary">
-		<input type="checkbox" name="fa" value="电脑"> 电脑
+		<input type="checkbox" name="fa" autocomplete="off" value="电脑"> 电脑
 	</label>
 </div>
+
+<h5>- 加载状态</h5>
+<button id="myButton" type="button" class="btn btn-primary" data-loading-text="Loading..." autocomplete="off">开始上传</button>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	
+	$('#myButton').on('click', function(){
+		var btn = $(this).button('loading');
+		setTimeout(function(){
+			btn.button('reset');
+		}, 1000);
+	});
 
+	// 可代替 data-toggle="button"
+	$('#toggle_btn').on('click', function(){
+		$(this).button('toggle');
+	});
 
 </script>
 </body>

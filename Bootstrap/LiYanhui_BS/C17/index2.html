@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>折叠插件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+
+	</style>
+</head>
+<body style="margin:100px;">
+
+<h5>- 基本实例</h5>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#content">BootStrap</button>
+
+<div class="collapse" id="content">
+	<div class="well">Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0。</div>
+</div>
+
+<h5>- 折叠 - JavaScript方式</h5>
+<button id="btn" class="btn btn-primary" data-target="#content2">BootStrap</button>
+
+<div class="collapse" id="content2">
+	<div class="well">Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0。</div>
+</div>
+
+<h5>- 手风琴折叠</h5>
+<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">第一部分</a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse in">
+			<div class="panel-body">
+				这里是第一部分
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">第二部分</a>
+			</h4>
+		</div>
+		<div id="collapseTwo" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第二部分
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">第三部分</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第三部分
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapseFour" data-toggle="collapse" data-parent="#accordion">第四部分</a>
+			</h4>
+		</div>
+		<div id="collapseFour" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第四部分
+			</div>
+		</div>
+	</div>
+</div>
+
+<h5>- 手风琴折叠 - JavaScript方式</h5>
+<div class="panel-group" id="accordion-js">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapse1" data-toggle="collapse">第一部分</a>
+			</h4>
+		</div>
+		<div id="collapse1" class="panel-collapse collapse in">
+			<div class="panel-body">
+				这里是第一部分
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapse2" data-toggle="collapse">第二部分</a>
+			</h4>
+		</div>
+		<div id="collapse2" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第二部分
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapse3" data-toggle="collapse">第三部分</a>
+			</h4>
+		</div>
+		<div id="collapse3" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第三部分
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a href="#collapse4" data-toggle="collapse">第四部分</a>
+			</h4>
+		</div>
+		<div id="collapse4" class="panel-collapse collapse">
+			<div class="panel-body">
+				这里是第四部分
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+	// collapse方法还提供了三个参数：hide, show, toggle
+	$('#btn').on('click', function(){
+		// $('#content2').collapse('show');
+		// $('#content2').collapse('hide');
+		$('#content2').collapse('toggle');
+	});
+
+	// 事件
+	$('#content2').on('show.bs.collapse', function(){
+		alert('当show方法调用时触发');
+	});
+	$('#content2').on('shown.bs.collapse', function(){
+		alert('折叠区完全显示出来时触发');
+	});
+	$('#content2').on('hide.bs.collapse', function(){
+		alert('当hide方法调用时触发');
+	});
+	$('#content2').on('hidden.bs.collapse', function(){
+		alert('折叠区完全隐藏之后触发');
+	});
+
+	// 手风琴折叠 - JavaScript方式
+	$('#collapse1, #collapse2, #collapse3, #collapse4').collapse({
+		parent : '#accordion-js',
+		toggle : false,
+	});
+
+</script>
+</body>
+</html>
