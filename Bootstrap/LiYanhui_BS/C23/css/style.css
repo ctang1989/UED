@@ -87,6 +87,12 @@ body {
 	.text p {
 		font-size: 15px;
 	}
+	.tab2-text {
+		float: left;
+	}
+	.tab2-img {
+		float: right;
+	}
 }
 
 /* 中等屏幕（桌面显示器，大于等于992px） */

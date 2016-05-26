@@ -128,12 +128,12 @@
 <div class="tab2">
 	<div class="container">
 		<div class="row">
-			<div class="text col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-6 tab2-img">
+				<img class="auto img-responsive center-block" src="img/tab2.png" alt="">
+			</div>
+			<div class="text col-md-6 col-sm-6 tab2-text">
 				<h3>强大的学习体系</h3>
 				<p>经过管理学大师层层把关、让您的企业突飞猛进。</p>
-			</div>
-			<div class="col-md-6 col-sm-6">
-				<img class="img-responsive center-block" src="img/tab2.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -143,7 +143,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
-				<img class="img-responsive center-block" src="img/tab3.png" alt="">
+				<img class="auto img-responsive center-block" src="img/tab3.png" alt="">
 			</div>
 			<div class="text col-md-6 col-sm-6">
 				<h3>完美的管理方式</h3>
@@ -167,6 +167,23 @@
 	$('#myCarousel').carousel({
 		// 5秒轮播
 		interval : 5000,
+	});
+
+	// 设置文字垂直居中
+	// alert($('.auto').eq(0).height());
+	// alert($('.text').eq(0).height());
+	// alert($('.auto').eq(0).height() - $('.text').eq(0).height());
+	// alert(($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2);
+	// alert(($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2  + 'px');
+
+	$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	$(window).resize(function() {
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+
+	$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	$(window).resize(function() {
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
 	});
 
 </script>
